@@ -6,6 +6,10 @@ html * {
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
 }
 
+body{
+  background-color: #e6f4f8;
+}
+
 a{
     text-decoration: none;
 }
@@ -118,11 +122,67 @@ background-size: cover;
       color: whitesmoke;
       padding: 8px 30px;
       border-radius: 30px;
-      margin-top: 25%;
   }
 
   .button a:visited{
   color: white;
   }
 
+.item__title{
+  color: white;
+  padding-top: 25px;
+}
 
+.item__name,
+.item__text{
+  color: white;
+}
+
+
+
+h1 {
+	font-size: 57px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 60px;
+}
+
+h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 23px;
+}
+
+h3 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 200;
+	margin-bottom: 90px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 200;
+	margin-bottom: 35px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 35px;
+}
+
+.footer{
+  height: 124px;
+  padding: 20px 30px;
+  background-color: #dbecf1;
+  max-width: 1186px;
+  margin: 0 auto;
+}
+
+.footer-text{
+  font-size: 13px;
+  margin-bottom: 20px;
+
+}
