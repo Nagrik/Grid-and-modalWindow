@@ -71,7 +71,6 @@ a:visited {color:whitesmoke;} /* посещенная ссылка */
       font-style: arial;
       cursor: pointer;
       overflow: hidden;
-      margin: 0 auto;
       top: 40%;
       
       background: rgba(255, 255, 255, 0.4);
