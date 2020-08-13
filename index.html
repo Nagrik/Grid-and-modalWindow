@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="index.js">
+    
 </head>
 <body>
   <header class="header">
@@ -24,17 +28,17 @@
       <h3 class="item__title">EDITOR'S CHOICE</h3>
       <h4 class="item__name">Sebastian Weiss</h4>
       <h1 class="item__text">URBAN STROKES</h1>
-    <button class="button" style=""><a href="#"> Read more </a></button>
+    <button class="button"data-btn="Window"><a data-fancybox href="#modal"> Read more </a></button>
     </div>
     <div class="item">
       <h2 class="item__title">INSPIRING READS</h2>
       <p class="item__name">The future is in lightening our footprints and brightening our lives.</p>
-      <button class="button"><a href="#"> Read more </a></button>
+      <button class="button"data-btn="Window"><a data-fancybox href="#modal"> Read more </a></button>
     </div>
     <div class="item">
       <h2 class="item__title">Reflections</h2>
       <p class="item__name">Stylish ways to bounce the heat off a roof and the planet.</p>
-      <button class="button"><a href="#"> Read more </a></button>
+      <button class="button"data-btn="Window"><a data-fancybox href="#modal"> Read more </a></button>
     </div>
     <div class="item">
     </div>
@@ -51,5 +55,18 @@
  <p class="footer-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, mollitia.</p>
 </footer>
 
+<div id="modal">
+  <div class="content-header">
+    <p class="content-header_top">URBAN STROKES</p>
+    <p class="content-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus praesentium repellat accusantium omnis fuga, reiciendis itaque iste incidunt sit eum?</p>
+  </div>
+  <div class="content-footer">
+    Lorem ipsum dolor sit adipisicing elit. Asperiores, nobis.
+  </div>
+</div>
+
+<script src="base.js"></script>
+<script src="plugins/modal.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

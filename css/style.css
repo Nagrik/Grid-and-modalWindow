@@ -13,7 +13,8 @@ body{
 a{
     text-decoration: none;
 }
-a:visited {color: #2F322A;} посещенная ссылка
+a:visited {color: #2F322A;}
+a:link{color: white;}
 img {
 	width: 100%;
 	max-width: 100%;
@@ -26,6 +27,8 @@ img {
   padding: 32px;
   display: flex;
   justify-content: space-around;
+  max-width: 1186px;
+margin: 0 auto;
 }
 
 .menu{
@@ -42,13 +45,10 @@ img {
 
 .item{
     border: 2px solid grey;
-    background-color: rgb(223, 61, 61);
     text-align: center;
   }
   
-  .item:nth-child(even){
-    background-color: rgb(138, 76, 76);
-  }
+
   
   .box{
     display: grid;
@@ -175,7 +175,7 @@ p {
 
 .footer{
   height: 124px;
-  padding: 20px 30px;
+  padding: 30px;
   background-color: #dbecf1;
   max-width: 1186px;
   margin: 0 auto;
@@ -184,5 +184,110 @@ p {
 .footer-text{
   font-size: 13px;
   margin-bottom: 20px;
+}
 
+/* .modal{} */
+
+.modal.open .modal-overlay,
+.modal.open .modal-window{
+    opacity:1 ;
+    z-index: 1000;
+}
+
+.modal.open .modal-window{
+    transform: translateY(100px);
+}
+
+.modal.open .modal-overlay{
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-window, .modal-overlay{
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.hide .modal-overlay,
+.modal.hide .modal-window{
+    opacity:1 ;
+    z-index: 1000;
+}
+.modal.hide .modal-window{
+    transform: translateY(-200px);
+}
+
+.modal.hide .modal-overlay{
+    background: rgba(0,0,0,0);
+}
+.modal-overlay{
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background .5s ease-in;
+}
+
+.modal-window{
+    width: 600px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 0 auto;
+    transform: translateY(-200px);
+    transition: transform .5s ease-in;
+}
+
+.modal-header{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-title{
+    font-size: 1.5rem;
+}
+
+.modal-close{
+    cursor: pointer;
+}
+
+.modal-body{
+    padding: 10px;
+}
+
+.modal-body p{
+    margin: 0 0 5px;
+}
+.modal-footer{
+    padding: 5px 10px;
+    border-top: 1px solid #eee;
+}
+
+#modal {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 40px 10px 40px;
+  text-align: justify;
+  border-radius: 3px;
+  border: 2px solid #c4c4c4;
+  text-align: center;
+}
+
+.content-body{
+  font-size: 18px;
+}
+
+.content-header_top{
+text-align: center;
+font-size: 24px;
+color: black;
+font-weight: 600;
+}
+
+.content-footer{
+  border-top: 1px solid #c4c4c4;
+  padding-top: 5px;
 }
