@@ -8,7 +8,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <link rel="stylesheet" href="index.js">
     
 </head>
 <body>
@@ -28,30 +27,34 @@
       <h3 class="item__title">EDITOR'S CHOICE</h3>
       <h4 class="item__name">Sebastian Weiss</h4>
       <h1 class="item__text">URBAN STROKES</h1>
-    <button class="button"data-btn="Window"><a data-fancybox href="#modal"> Read more </a></button>
+    <button class="button" data-fancybox href="#modal"><a data-fancybox href="#modal"> Read more </a></button>
     </div>
     <div class="item">
       <h2 class="item__title">INSPIRING READS</h2>
       <p class="item__name">The future is in lightening our footprints and brightening our lives.</p>
-      <button class="button"data-btn="Window"><a data-fancybox href="#modal"> Read more </a></button>
+      <button class="button" data-fancybox href="#modal_1"><a data-fancybox href="#modal_1"> Read more </a></button>
     </div>
     <div class="item">
       <h2 class="item__title">Reflections</h2>
       <p class="item__name">Stylish ways to bounce the heat off a roof and the planet.</p>
-      <button class="button"data-btn="Window"><a data-fancybox href="#modal"> Read more </a></button>
+      <button class="button" data-fancybox href="#modal_2"><a data-fancybox href="#modal_2"> Read more </a></button>
     </div>
     <div class="item">
+      <a data-fancybox="images" href="images/gallery-1.jpg"  data-caption="item1"><img src="images/gallery-1.jpg" /></a>
     </div>
     <div class="item">
+      <a data-fancybox="images" href="images/gallery-2.jpg"  data-caption="item2"><img src="images/gallery-2.jpg" /></a>
     </div>
     <div class="item">
+      <a data-fancybox="images" href="images/gallery-3.jpg"  data-caption="item3"><img src="images/gallery-3.jpg" /></a>
     </div>
     <div class="item">
+      <a data-fancybox="images" href="images/gallery-4.jpg"  data-caption="item4"><img src="images/gallery-4.jpg" /></a>
     </div>
   </div>    
 
 <footer class="footer">
- <p class="footer-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, hic.</p>
+ <p class="footer-text"> ©2020 ipsum dolor sit amet consectetur adipisicing elit. Repellat, hic.</p>
  <p class="footer-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, mollitia.</p>
 </footer>
 
@@ -65,8 +68,26 @@
   </div>
 </div>
 
-<script src="base.js"></script>
-<script src="plugins/modal.js"></script>
-<script src="index.js"></script>
+<div id="modal_1">
+  <div class="content-header">
+    <p class="content-header_top">INSPIRING READS</p>
+    <p class="content-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus praesentium repellat accusantium omnis fuga, reiciendis itaque iste incidunt sit eum?</p>
+  </div>
+  <div class="content-footer">
+    Lorem ipsum dolor sit adipisicing elit. Asperiores, nobis.
+  </div>
+</div>
+
+<div id="modal_2">
+  <div class="content-header">
+    <p class="content-header_top">REFLECTIONS</p>
+    <p class="content-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus praesentium repellat accusantium omnis fuga, reiciendis itaque iste incidunt sit eum?</p>
+  </div>
+  <div class="content-footer">
+    Lorem ipsum dolor sit adipisicing elit. Asperiores, nobis.
+  </div>
+</div>
+
+
 </body>
 </html>
