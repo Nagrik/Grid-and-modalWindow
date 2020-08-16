@@ -48,6 +48,7 @@ align-items: center;
 .item{
     border: 2px solid grey;
     text-align: center;
+    background-repeat: no-repeat;
   }
   
 
@@ -72,8 +73,6 @@ background-image: url(../images/hero.jpg);
   .item:nth-child(2){
     grid-row: span 3;
     grid-column: span 2;
-background-repeat: no-repeat;
-background-size: cover;
 background-color: #b9a88e;
 
   }
@@ -88,8 +87,8 @@ background-color: #b9a88e;
   .item:nth-child(4){
     grid-row: span 5;
     background-image: url(../images/gallery-1.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-background-size: cover;
   }
   
   .item:nth-child(5){
@@ -185,7 +184,6 @@ p {
 }
 
 .footer{
-  height: 124px;
   padding: 35px;
   background-color: #dbecf1;
   max-width: 1200px;
@@ -235,4 +233,34 @@ font-weight: 600;
   .menu{
     width: 475px;
   }
+  .item:nth-child(2){
+    grid-row: span 3;
+    grid-column: span 4;
+  }
+  .item:nth-child(3){
+    grid-row: span 3;
+    grid-column: span 4;
+  }
+
+
+  .footer{
+    padding: 25px;
+    background-color: #dbecf1;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .item:nth-child(4){
+grid-row: span 1;
+  }
+  .item:nth-child(5){
+    grid-row: span 1;
+      }
+      .item:nth-child(6){
+        grid-row: span 1;
+          }
+          .item:nth-child(7){
+            grid-row: span 1;
+              }
+
 }
